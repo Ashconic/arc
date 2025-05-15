@@ -1,0 +1,96 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #000000;
+  color: white;
+}
+
+.container {
+  max-width: 900px;
+  margin: auto;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  color: #f97316;
+}
+
+.toggle {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.toggle button {
+  margin: 0 10px;
+  padding: 10px 20px;
+  background: #262626;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.toggle button.active {
+  background: #f97316;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  border: none;
+  font-size: 16px;
+}
+
+button {
+  padding: 12px 20px;
+  background: #f97316;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.recipe-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 20px;
+}
+
+.dish-card {
+  background: #1a1a1a;
+  padding: 15px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.dish-card:hover {
+  transform: scale(1.03);
+  background: #262626;
+}
+
+.dish-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.dish-details {
+  background: #1a1a1a;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.dish-details img {
+  max-width: 100%;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+ol {
+  padding-left: 20px;
+}
